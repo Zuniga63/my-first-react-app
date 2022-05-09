@@ -1,23 +1,23 @@
-import logo from './logo.svg';
-import './App.css';
+import "./App.css";
+
+function Title(props) {
+  return <h1> {props.value} </h1>;
+}
+
+function Subtitle(props) {
+  return <p>{props.text}</p>;
+}
+
+function Button(props) {
+  return <button>{props.content}</button>;
+}
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Title value="SPA With React" />
+      <Subtitle text="This is a amazing app build with React" />
+      <Button content="Go to Documentation" />
     </div>
   );
 }
