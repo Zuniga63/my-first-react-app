@@ -1,16 +1,7 @@
 import "./App.css";
-
-function Title(props) {
-  return <h1> {props.value} </h1>;
-}
-
-function Subtitle(props) {
-  return <p>{props.text}</p>;
-}
-
-function Button(props) {
-  return <button>{props.content}</button>;
-}
+import Title from "./components/Title";
+import Subtitle from "./components/Subtitle";
+import Button from "./components/Button";
 
 function App() {
   return (
